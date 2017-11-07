@@ -2,8 +2,8 @@
 public class RandomEnemy extends Enemy {
 	public RandomEnemy(double x, double y, double vx, double vy) {
 		super(x, y, vx, vy);
-		life = 4;
-		score = 3;
+		life = 4 * GameWorld.stage;
+		score = 30;
 	}
 	public void move() {
 		super.move();
@@ -14,6 +14,6 @@ public class RandomEnemy extends Enemy {
 	}
 	public void draw(MyFrame f) {
 		f.setColor(255, 50, 150);
-		f.fillRect(x, y, 50, 50);
+		f.fillRect(x, y, 80, 80);
 	}
 }

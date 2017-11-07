@@ -14,7 +14,7 @@ public class Player extends Character implements KeyListener {
 	}
 	public void shoot() {
 		GameWorld.playerBullets.add(new PlayerBullet(x, y, 0, -20));
-		System.out.println("弾の数:" + GameWorld.playerBullets.size());
+//		System.out.println("弾の数:" + GameWorld.playerBullets.size());
 	}
 
 	private int count;
@@ -49,7 +49,7 @@ public class Player extends Character implements KeyListener {
 			// 3Way弾
 //			GameWorld.playerBullets.add(new PlayerBullet(x, y, 4, -10));
 //			GameWorld.playerBullets.add(new PlayerBullet(x, y, -4, -10));
-			System.out.println("弾の数:" + GameWorld.playerBullets.size());
+//			System.out.println("弾の数:" + GameWorld.playerBullets.size());
 		}
 		if (e.getKeyCode() == KeyEvent.VK_ENTER) {
 		    System.out.println("Enterキーが入力されました");

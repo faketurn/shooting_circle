@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Vector;
 
 public class GameWorld {
@@ -7,4 +8,5 @@ public class GameWorld {
 	static boolean enterPressed;
 	static int stage;
 	static int score;
+	static ArrayList<Integer> scores;
 }
